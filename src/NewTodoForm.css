@@ -1,0 +1,19 @@
+#desc, #desc:focus {
+    background-color: #423a6f;
+    border: none;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    outline:none;
+    color: #F8F9FA;
+}
+
+button {
+    border-radius: 0px;
+    background-color: #423a6f;
+    border: none;
+    height: 42px;
+    width: 35px;
+    cursor: pointer;
+    color: #F8F9FA;
+}

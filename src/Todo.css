@@ -1,0 +1,40 @@
+.Todo div {
+    background-color: #423a6f;
+    color: #F8F9FA;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.Todo {
+    list-style-type: none;
+}
+
+.Todo div button, div {
+    cursor: pointer;
+}
+
+.Todo div span {
+    margin: 5px;
+}
+
+.trashcan {
+    padding: 10px;
+}
+
+.pencil {
+    padding: 10px 0px 10px 10px;
+}
+
+#descEdt, #descEdt:focus {
+    background-color: #440794;
+    border: none;
+    width: 250px;
+    height: 40px;
+    outline:none;
+    color: #F8F9FA;
+    margin: 5px;
+}
+
