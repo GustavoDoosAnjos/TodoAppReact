@@ -50,7 +50,7 @@ export default class NewTodoForm extends Component {
     render() {
         return (
         <div>
-            <form onSubmit={this.onSubmitHandler}>
+            <form autocomplete="off" onSubmit={this.onSubmitHandler}>
                 <input onChange={this.onChangeHandler} name='desc' id='desc' value={this.state.desc}/>
                 <button><FontAwesomeIcon onKeyDown={this.handleKeyDown} onClick={this.props.removeTodo} icon={faPlus} /></button>
             </form>

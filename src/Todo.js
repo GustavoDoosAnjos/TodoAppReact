@@ -9,12 +9,14 @@ export default class Todo extends Component {
 
     this.state = {
       isEditing: false,
-      task: this.props.desc
+      task: this.props.desc,
+      isDone: false
     }
 
     this.handleEdicao = this.handleEdicao.bind(this);
     this.onSubmitHandler = this.onSubmitHandler.bind(this);
     this.onChangeHandler = this.onChangeHandler.bind(this);
+    this.toggleDone = this.toggleDone.bind(this)
   }
 
   handleEdicao() {
@@ -36,12 +38,18 @@ export default class Todo extends Component {
   }))
   }
 
+  toggleDone() {
+    this.setState(state => ({
+      isDone: !state.isDone
+    }))
+  }
+
   render() {
     return (
       <li className='Todo'>
           {!this.state.isEditing ? 
           <div className='container'>
-            <span>
+            <span onClick={this.toggleDone} className={`descricaoTask ${this.state.isDone ? 'done' : ''}`} >
               {this.props.desc} 
             </span>
             <div>

@@ -18,6 +18,8 @@
 
 .Todo div span {
     margin: 5px;
+    line-break: normal;
+    white-space: normal;
 }
 
 .trashcan {
@@ -36,5 +38,9 @@
     outline:none;
     color: #F8F9FA;
     margin: 5px;
+}
+
+.done{
+    text-decoration: line-through;
 }
 
