@@ -6,10 +6,14 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 2.5px;
 }
 
 .Todo {
     list-style-type: none;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .Todo div button, div {
@@ -17,7 +21,7 @@
 }
 
 .Todo div span {
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
     line-break: normal;
     white-space: normal;
 }
@@ -40,7 +44,17 @@
     margin: 5px;
 }
 
-.done{
+.done {
     text-decoration: line-through;
 }
 
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   

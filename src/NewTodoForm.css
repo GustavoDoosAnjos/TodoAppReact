@@ -6,6 +6,7 @@
     margin-top: 20px;
     outline:none;
     color: #F8F9FA;
+    border-radius: 10px 0px 0px 10px;
 }
 
 button {
@@ -16,4 +17,5 @@ button {
     width: 35px;
     cursor: pointer;
     color: #F8F9FA;
+    border-radius: 0px 10px 10px 0px;
 }

@@ -48,8 +48,8 @@ export default class Todo extends Component {
     return (
       <li className='Todo'>
           {!this.state.isEditing ? 
-          <div className='container'>
-            <span onClick={this.toggleDone} className={`descricaoTask ${this.state.isDone ? 'done' : ''}`} >
+          <div onClick={this.toggleDone} className='container'>
+            <span className={`descricaoTask ${this.state.isDone ? 'done' : ''}`} >
               {this.props.desc} 
             </span>
             <div>
